@@ -1,6 +1,7 @@
 # docker
 Sample of project with Docker
 
+[docs](https://tom2kota.github.io/docker/)
 
 -----------------
 
@@ -34,6 +35,37 @@ sudo apt install docker-ce
 sudo systemctl status docker
 
 sudo docker run hello-world
+```
+
+```
+docker search ubuntu
+sudo docker pull ubuntu
+sudo docker images
+sudo docker run ubuntu
+
+sudo docker run -it ubuntu
+
+apt update
+apt install nodejs
+node -v
+exit
+```
+
+```
+docker ps
+docker ps -a
+docker ps -l
+docker start 1c08a7a0d0e4
+docker stop quizzical_mcnulty
+docker rm youthful_curie
+
+docker images
+```
+
+```
+docker login -u docker-registry-username
+docker push docker-registry-username/docker-image-name
+docker pull sammy/ubuntu-nodejs
 ```
 
 ## get docker
