@@ -104,7 +104,28 @@ sudo docker run hello-world
 
 -----------------
 
+## dockerfile
 
+```
+touch Dokerfile
+
+```
+[versions of node](https://hub.docker.com/_/node/)
+```
+// Dokerfile
+
+FROM node:carbon
+
+CMD ["/bin/bash"]
+```
+
+```
+sudo docker build -t tagnodeerbium .
+
+sudo docker run -it tagnodeerbium
+
+node -v
+```
 
 -----------------
 
