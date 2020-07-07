@@ -104,7 +104,7 @@ sudo docker run hello-world
 
 -----------------
 
-## dockerfile
+## dockerfile #1
 
 ```
 touch Dokerfile
@@ -137,7 +137,36 @@ exit
 
 -----------------
 
+## dockerfile #2
 
+```
+touch Dokerfile
+```
+ 
+```
+// Dokerfile
+
+FROM node:carbon
+
+WORKDIR /usr/src/react-start
+
+COPY ./ ./
+
+RUN npm i
+
+CMD ["/bin/bash"]
+```
+
+```
+sudo docker build -t reactstart .
+
+sudo docker run -it -p 3000:3000 reactstart
+sudo docker run -it -d -p 3000:3000 reactstart
+
+ls
+npm start
+ 
+```
 
 -----------------
 
