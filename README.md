@@ -108,7 +108,6 @@ sudo docker run hello-world
 
 ```
 touch Dokerfile
-
 ```
 [versions of node](https://hub.docker.com/_/node/)
 ```
@@ -123,8 +122,17 @@ CMD ["/bin/bash"]
 sudo docker build -t tagnodeerbium .
 
 sudo docker run -it tagnodeerbium
+sudo docker run -it -d tagnodeerbium
 
 node -v
+
+sudo docker ps
+
+sudo docker exec -it ff6904ff80fc bash
+sudo docker stop ff6904ff80fc
+
+
+exit
 ```
 
 -----------------
